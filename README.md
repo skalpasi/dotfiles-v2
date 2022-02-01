@@ -1,2 +1,4 @@
 # BSPWM Dotfile 
-!(screenshot)[Wallpapers/wall1.jpg]
+## Screenshot
+
+![screenshot](Wallpapers/rice.png)
