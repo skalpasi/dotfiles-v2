@@ -1,1 +1,2 @@
-# dotfiles-v2
+# BSPWM Dotfile 
+!(screenshot)[Wallpapers/wall1.jpg]
