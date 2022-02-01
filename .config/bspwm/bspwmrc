@@ -1,0 +1,31 @@
+#! /bin/sh
+
+bspc monitor -d 1 2 3 4 5 6 7 8
+
+bspc config border_width         0
+bspc config window_gap           5
+bspc config focus_follows_pointer true
+
+bspc config split_ratio          0.5
+bspc config borderless_monocle   true
+bspc config gapless_monocle      true
+
+sxhkd &
+
+#setting backgruond
+feh --bg-scale ~/Wallpapers/wall1.jpg &
+xrdb .Xresources &
+
+
+#killall -q polybar
+#while pgrep -u $UID -x polybar >/dev/null; do sleep 1; done
+#polybar main -c ~/.config/polybar/config.ini &
+sh $HOME/.config/polybar/launch.sh &
+
+#set default cursor
+xsetroot -cursor_name left_ptr &
+
+#compositor
+picom --config ~/.config/picom/picom.conf &
+
+wmname LG3D &

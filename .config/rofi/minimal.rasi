@@ -1,0 +1,67 @@
+configuration {
+  display-drun: ":: ";
+  drun-display-format: "{name}";
+  font: "JetBrains Mono Nerd Font Regular 10";
+  modi: "window,run,drun";
+  show-icons: false;
+}
+
+* {
+
+  bg: #141C21;
+  bg-alt: #999999;
+
+  fg: #ffffff;
+  fg-alt: #ffffff;
+
+  background-color: @bg;
+  
+  border: 0;
+  margin: 0;
+  padding: 0;
+  spacing: 0;
+}
+
+element {
+  padding: 8;
+  text-color: @bg-alt;
+}
+
+element selected {
+  text-color: @fg;
+}
+
+element-text {
+  padding: 2;
+  background-color: inherit;
+  text-color: inherit;
+}
+
+entry {
+  padding: 12 0 12 3;
+  text-color: @fg;
+}
+
+inputbar {
+  children: [prompt, entry];
+}
+
+listview {
+  columns: 2;
+  lines: 8;
+}
+
+mainbox {
+  children: [inputbar, listview];
+}
+
+prompt {
+  padding: 12 0 0 12;
+  text-color: @fg;
+}
+
+window {
+  transparency: "real";
+  width: 500;
+  padding: 0 0 10 10;
+}
